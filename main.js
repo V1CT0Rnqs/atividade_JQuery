@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $('form').on('submit', function(e) {
         e.preventDefault();
-        const enderecoNovaImagem = $('#overlay-imagem-link').val();
+        const enderecoNovaImagem = $('#overlay-image-link').val();
         const novoItem = $('<li></li>');
         $(`<img src="${enderecoNovaImagem}" />`).appendTo(novoItem);
         $(`
@@ -21,6 +21,6 @@ $(document).ready(function() {
         `).appendTo(novoItem);
         $(novoItem).appendTo('ul');
         $(novoItem).fadeIn(500);
-        $('#overlay-imagem-link').val('');
+        $('#overlay-image-link').val('');
     })
 });
